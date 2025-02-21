@@ -1,0 +1,80 @@
+/* Imported Fonts  */
+
+/* Universal Selector */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* World Elements */
+:root{
+    --bg-color-1:#2b2b2b;
+    --bg-color-2:;
+    --txt-color-1:white;
+}
+
+/* Overall Web  */
+.web{
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* Home */
+.home{
+    height: 100vh;
+    background: red;
+    padding: 10px;
+}
+
+.home>header{
+    height: 10vh;
+    background: var(--bg-color-1);
+}
+
+.home>header>nav{
+    height: 10vh;
+    /* position: sticky; */
+}
+
+
+.home>.main{
+    height: 80vh;
+    background: blue;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home>.main>header h2{
+    color: var(--txt-color-1);
+    font-size: 60px;
+}
+
+.home>.main>header p{
+    color: var(--txt-color-1);
+    font-size: 30px;
+}
+
+.main>section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main>section>button{
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid var(--bg-color-1);
+    width: 10%;
+}
+/* Home closes */
+
+/* Accessories */
+.accessories{
+    height: 100vh;
+}
+/* Accessories closes*/
