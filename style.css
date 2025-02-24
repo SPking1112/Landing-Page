@@ -338,6 +338,12 @@ ul{
     
 }
 
+/* Promotion  */
+.promo{
+   justify-content: center;
+   align-items: center;
+}
+
 /* Footer  */
 @media(max-width: 767px){
     .footer-col{
