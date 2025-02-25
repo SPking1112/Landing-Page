@@ -70,7 +70,7 @@ nav div h1::before{
     content: "";
     width: 0%;
     height: 3px;
-    background-color: red;
+    background-color: var(--bg-primary);
     bottom: 0px;
     left: 0px;
     transition: all 2s;
@@ -525,6 +525,28 @@ nav div h1:hover::after{
 }
 
 /* About Page  closes*/
+
+/* Cart Page  */
+.cart{
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cart>.main{
+    /* background: red; */
+    height: 100vh;
+    padding: 10vh 30px;
+}
+
+.cart>.main h2,span{
+    font-size: 40px;
+    font-family:serif ;
+}
+
+.ccontainer{
+    border-top: 3px solid var(--bg-secondary);
+}
+/* Cart Page  closes*/
 
 
 /* Footer  */
