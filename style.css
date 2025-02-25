@@ -148,6 +148,11 @@ nav div h1:hover::after{
         display: initial;
         font-size: 20px;
     }
+
+    nav div h1:hover::before{
+        display: none;
+    }
+    
 }
 
 
@@ -341,6 +346,38 @@ nav div h1:hover::after{
 }
 
 /* About Us  */
+.abtpg{
+    height: 100vh;
+    padding: 20px;
+}
+
+.abtpg>.main{
+    height: 50%;
+    background: url(./abt-bg-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.abtpg>.main h2{
+    font-size: 490px;
+    stroke: var(--bg-primary);
+    text-shadow: 
+        2px 2px 0 red, 
+        -2px -2px 0 blue, 
+        2px -2px 0 green, 
+        -2px 2px 0 yellow;
+        
+}
+
+
+/* About Page  */
+
+/* About Page  closes*/
 
 
 /* Footer  */
