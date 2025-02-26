@@ -24,6 +24,54 @@
     z-index: 9;
 }
 
+/* Login  */
+
+.login{
+    height:100vh;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(45deg,lightblue,white,gray);
+}
+
+.login>h2{
+    font-size: 40px;
+    font-family: serif;
+}
+
+.login>.loginbox{
+    width: 50%;
+    height: 60%;
+    background:linear-gradient(-45deg,lightblue,white,gray);
+    border: 3px solid var(--bg-secondary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-btn{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border: 2px solid var(--bg-secondary);
+    border-radius: 8px;
+    background:linear-gradient(to left,lightblue,white,gray);
+    color: var(--bg-secondary);
+    cursor: pointer;
+    transition: 1000ms all ease-in-out;
+    /* font-size: 20px; */
+}
+
+.login-btn:hover{
+    background:linear-gradient(to right,lightblue,white,gray);
+    transform: scale(1.1);
+}
+
 /* Home */
 .home{
     height: 100vh;
@@ -155,6 +203,7 @@ nav div h1:hover::after{
     
 }
 
+/* Home  */
 
 .home>.main{
     height: 80vh;
@@ -171,6 +220,7 @@ nav div h1:hover::after{
     font-size: 45px;
     color: var(--bg-primary);
     font-weight: 600;
+    font-family:serif;
 }
 
 /* .home button{
@@ -206,13 +256,28 @@ nav div h1:hover::after{
 /* Promotion */
 .promo{
     min-height: 60vh;
-    padding: 20px;
+    padding: 10px;
     /* background: rebeccapurple; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
+    /* animation: scroll linear;
+    animation-timeline: view();
+    animation-range:entry 50%; */
 }
+/* 
+@keyframes scroll {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }   
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+} */
+
 
 .promo>.box{
     width: 250px;
@@ -222,6 +287,7 @@ nav div h1:hover::after{
     background-position: center;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .promo .box h2{
@@ -320,11 +386,12 @@ nav div h1:hover::after{
 /* New Arrivals */
 .newarr{
     min-height: 100vh;
+    background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .newarr>h2{
@@ -341,7 +408,7 @@ nav div h1:hover::after{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* gap: 30px; */
+    gap: 30px;
 }
 
 .nacontainer>.nabox{
@@ -548,6 +615,53 @@ nav div h1:hover::after{
 }
 /* Cart Page  closes*/
 
+/* Shop Page  */
+.shop{
+    min-height: 100vh;
+    background: red;
+    padding: 10px;
+}
+
+.shop>.smain{
+    width: 100%;
+    height: 90%;
+    background: blue;
+    transform: translatey(80px);
+}
+
+.shop>.smain>header{
+    width: 100%;
+    height: 15%;
+    padding: 20px;
+    border-bottom: 5px solid var(--bg-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scontainer{
+    height: 80%;
+    background: gray;
+    padding: 20px;
+}
+
+.shirts>header>h1{
+    font-size: 25px;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.shirts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shirts>.shop-box{
+    width: 200px;
+    height: 300px;
+    border: 2px solid var(--bg-secondary);
+}
+/* Shop Page  closes*/
 
 /* Footer  */
 .container{
