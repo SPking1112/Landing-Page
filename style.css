@@ -750,7 +750,7 @@ ul{
     align-items: center;
     justify-content: center;
     border: 2px solid var(--bg-secondary);
-    transform: translatey(-300px);
+    /* display: none; */
 }
 .popup>h3{
     display: flex;
@@ -760,7 +760,8 @@ ul{
 }
 
 .popactive{
-    transform: translatey(0x);
+    background: red;
+    /* transform: translatey(0x); */
 }
 
 /* Popup  */
