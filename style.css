@@ -58,7 +58,7 @@
     font-size: 20px;
     font-weight: 700;
     padding: 12px 28px;
-    border: 2px solid var(--bg-secondary);
+    border: 2px solid linear-gradient(to left,lightblue,white,gray);
     border-radius: 8px;
     background:linear-gradient(to left,lightblue,white,gray);
     color: var(--bg-secondary);
@@ -737,12 +737,72 @@ ul{
 
 /* Footer closes */
 
+/* Popup */
+.popup{
+    width: 300px;
+    height: 40px;
+    background:rgba(200, 196, 196, 0.537);
+    border-radius: 20px;
+    position: fixed;
+    top: 20%;
+    left:39%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--bg-secondary);
+    transform: translatey(-300px);
+}
+.popup>h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.popactive{
+    transform: translatey(0x);
+}
+
+/* Popup  */
+/* <850px */
+@media only screen and (max-width:850px) {
+    .popactive{
+        top: 20%;
+        left:30%;
+    }
+}
+
+/* <600px */
+@media only screen and (max-width:600px) {
+    .popactive{
+        top: 25%;
+        left:23%;
+    }
+}
+
+/* <450px */
+@media only screen and (max-width:450px) {
+    .popactive{
+        top: 20%;
+        left:19%;
+    }
+}
+
+/* <400px */
+@media only screen and (max-width:400px) {
+    .popactive{
+        top: 20%;
+        left:4%;
+    }
+}
+
+/* Popup closes*/
 
 /* Responsive */
-/* <700px */
 
 /* Home  */
-@media only screen and (max-width:700px) {
+/* <700px */
+@media only screen and (max-width:750px) {
     .home .main p{
         font-size: 25px;
         /* padding: 10px; */
