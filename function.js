@@ -1,10 +1,15 @@
 let pop = document.getElementById("popup");
-pop.style.display="none"
-console.log()
+
+let username = document.getElementById("username");
+
+ document.getElementById("cart-username").innerText = username.value;
 
 // Cart page Redirect
 function cart(){
-    pop.style.display="block"
+     pop.style.display="initial"
+    setInterval(() => {
+        pop.style.display="none"
+    },1000);
 }
 
 // Shop page Redirect
