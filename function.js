@@ -7,7 +7,7 @@ let username = document.getElementById("username");
 // Cart page Redirect
 function cart(){
      pop.style.display="initial"
-    setInterval(() => {
+    setTimeout(() => {
         pop.style.display="none"
     },1000);
 }
